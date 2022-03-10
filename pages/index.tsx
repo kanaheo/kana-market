@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-400 py-20 px-20 grid gap-10 min-h-screen">
-      <div className="bg-white p-6 rounded-3xl shadow-xl">
-        <span className="font-semibold text-2xl">Select Item</span>
+    <div className="bg-slate-400 grid gap-10 lg:grid-cols-2 xl:grid-cols-3 xl:place-content-center py-20 px-20 min-h-screen">
+      <div className="bg-white sm:bg-red-400 md:bg-slate-300 lg:bg-orange-400 xl:bg-purple-300 2xl:bg-amber-300 p-6 rounded-3xl shadow-xl">
+        <span className="font-semibold text-2xl">Select Itemsss</span>
         <ul>
           {[1, 2, 3, 4, 5].map((item, key) => {
             return (
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       </div>
       <div className="bg-white overflow-hidden rounded-3xl shadow-xl">
         <div className="bg-blue-500 p-6 pb-14">
-          <span className="text-white text-2xl">Profile</span>
+          <span className="text-white text-2xl">프로필</span>
         </div>
         <div className="rounded-3xl p-6 bg-white relative -top-5">
           <div className="flex relative -top-16 items-end justify-between">
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
         </div>
         <div className="bg-zinc-400 h-72 mb-5" />
         <div className="flex flex-col">
-          <span className="font-medium text-xl">Swoon Lounge</span>
+          <span className="font-medium text-xl">맛있는 음식</span>
           <span className="text-xs text-gray-500">Chair</span>
           <div className="mt-3 mb-5 flex justify-between items-center">
             <div className="space-x-2">
